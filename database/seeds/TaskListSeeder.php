@@ -12,7 +12,7 @@ class TaskListSeeder extends Seeder
     public function run()
     {
         for($i = 1; $i <= 100; $i++) {
-            DB::table('messages')->insert([
+            DB::table('tasks')->insert([
                 'status' => '未着手',
                 'content' => 'test content ' . $i
             ]);
